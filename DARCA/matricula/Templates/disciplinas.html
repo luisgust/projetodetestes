@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    {% for element in disciplina %}
+      <h1><a href= {% url 'matricular' aluno.id element.id %} target="_blank">{{ element.title }} ({{ element.creditos }} créditos)  --> Clique para matricular</a></h1>
+        <p1>({{ element.secretaria.title }})</p1>
+    {%endfor%}
+    <h2> <a href= {% url 'index' %} target="_blank"><center align=”center”>VOLTAR A TELA INICIAL</center></a></h2>
+</body>
+</html>
+
+
+

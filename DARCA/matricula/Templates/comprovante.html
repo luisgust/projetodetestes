@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>Aluno: {{ aluno.name }}</h1>
+    <h1>Código: {{ aluno.codigo_matricula }}</h1>
+    <h1>Créditos: {{ aluno.creditos }}</h1>
+    <h1>Secretaria: {{ aluno.secretaria }}</h1>
+
+    <h1>Matérias Matriculadas:</h1>
+    {% for element in list %}
+    <h1>{{ element.title }}</h1>
+
+    {% endfor %}
+
+     <h2> <a href= {% url 'index' %} target="_blank"><center align=”center”>VOLTAR A TELA INICIAL</center></a></h2>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    {% if matriculado  %}
+        <h1>O aluno {{ aluno.name }} foi matriculado com sucesso</h1>
+    {% elif condicional1 %}
+        <h1>O aluno {{ aluno.name }} não tem créditos suficientes</h1>
+    {% elif condicional3 %}
+        <h1>O aluno {{ aluno.name }} não pagou a disciplina de pré requisito</h1>
+     {% elif condicional4 %}
+        <h1>O aluno {{ aluno.name }} já está matriculado nesta matéria</h1>
+    {% endif %}
+    <h2> <a href= {% url 'index' %} target="_blank"><center align=”center”>VOLTAR A TELA INICIAL</center></a></h2>
+
+</body>
+</html>

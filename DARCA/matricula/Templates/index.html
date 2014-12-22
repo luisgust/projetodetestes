@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    {% for element in alunos %}
+      <h1> <a href= {% url 'disciplinas' element.id %} target="_blank">{{ element.name }}</a> </h1> <p><a href= {% url 'comprovante' element.id %} target="_blank">GERAR COMPROVANTE</a></p>
+    {%endfor%}
+
+
+     <h2> <a href= {% url 'consultas' %} target="_blank"><center align=”center”>CONSULTAS</center></a></h2>
+
+</body>
+</html>
+
+
